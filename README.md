@@ -1,4 +1,4 @@
-# Aadarsh Vision Micro Finance Foundation — Website
+# Aadarsh Vision Micro Finance Foundation
 
 A modern, responsive marketing website for Aadarsh Vision Micro Finance Foundation, built with **React 18 + TypeScript + Vite**, styled with **Tailwind CSS**, animated with **Framer Motion**, and routed with **React Router**.
 
