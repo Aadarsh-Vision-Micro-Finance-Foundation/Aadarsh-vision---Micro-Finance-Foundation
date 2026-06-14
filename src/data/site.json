@@ -1,0 +1,62 @@
+{
+  "organization": {
+    "name": "Aadarsh Vision Micro Finance Foundation",
+    "shortName": "Aadarsh Vision",
+    "tagline": "Empowering Today, Prosperous Tomorrow",
+    "registrationNote": "A registered financial inclusion foundation",
+    "founded": "2014"
+  },
+  "nav": {
+    "links": [
+      { "label": "Home", "path": "/" },
+      { "label": "About", "path": "/about" },
+      { "label": "Services", "path": "/services" },
+      { "label": "Impact", "path": "/impact" },
+      { "label": "Loan Process", "path": "/loan-process" },
+      { "label": "Contact", "path": "/contact" }
+    ],
+    "cta": { "label": "Apply for Loan", "path": "/loan-process" }
+  },
+  "hero": {
+    "eyebrow": "Financial Inclusion · Since 2014",
+    "headline": "Empowering Today, Prosperous Tomorrow",
+    "subheading": "Providing financial inclusion, growth opportunities, and reliable microfinance solutions for a better future.",
+    "primaryCta": { "label": "Apply for Loan", "path": "/loan-process" },
+    "secondaryCta": { "label": "Contact Us", "path": "/contact" },
+    "highlights": [
+      { "label": "Beneficiaries reached", "value": "48,000+" },
+      { "label": "Disbursed in loans", "value": "₹186 Cr" },
+      { "label": "Villages served", "value": "612" }
+    ]
+  },
+  "contact": {
+    "phone": "+91 98765 43210",
+    "phoneSecondary": "+91 11 4567 8901",
+    "email": "info@aadarshvision.org",
+    "supportEmail": "support@aadarshvision.org",
+    "address": {
+      "line1": "Aadarsh Vision Bhawan, Plot No. 24, Sector 18",
+      "line2": "Rohini, New Delhi – 110085, India"
+    },
+    "officeHours": "Monday – Saturday, 9:30 AM – 6:00 PM",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Rohini,New+Delhi,India&output=embed",
+    "social": {
+      "facebook": "https://facebook.com/aadarshvision",
+      "twitter": "https://twitter.com/aadarshvision",
+      "instagram": "https://instagram.com/aadarshvision",
+      "linkedin": "https://linkedin.com/company/aadarshvision",
+      "youtube": "https://youtube.com/@aadarshvision"
+    }
+  },
+  "footer": {
+    "quickLinks": [
+      { "label": "About Us", "path": "/about" },
+      { "label": "Our Services", "path": "/services" },
+      { "label": "Impact & Stories", "path": "/impact" },
+      { "label": "Loan Process", "path": "/loan-process" },
+      { "label": "Contact", "path": "/contact" },
+      { "label": "Privacy Policy", "path": "/privacy-policy" }
+    ],
+    "copyrightName": "Aadarsh Vision Micro Finance Foundation"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "intro": {
+    "eyebrow": "About The Foundation",
+    "title": "Building ladders, not handouts",
+    "description": "Aadarsh Vision Micro Finance Foundation works at the last mile of India's financial system — reaching households and small entrepreneurs that traditional banks find hard to serve. We combine small-ticket credit with training, mentorship, and savings discipline so that every rupee lent moves a family further from vulnerability and closer to ownership."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To deliver fair, transparent, and timely microfinance services that help low-income households and micro-entrepreneurs build sustainable livelihoods, while embedding financial literacy into every interaction."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "A future where geography, gender, or income never determines someone's access to credit, savings, and financial dignity — where every village has the tools to grow its own prosperity."
+  },
+  "values": [
+    {
+      "title": "Integrity First",
+      "description": "Every loan term is explained in plain language before a signature is taken — no hidden charges, ever."
+    },
+    {
+      "title": "Community-Led Design",
+      "description": "Our products are shaped by feedback from the self-help groups and entrepreneurs who use them."
+    },
+    {
+      "title": "Dignity in Access",
+      "description": "We meet people where they are — in their villages, in their language, on their schedule."
+    }
+  ],
+  "impactHighlight": {
+    "title": "A decade at the last mile",
+    "description": "Since 2014, our field teams have travelled to remote panchayats and urban slum clusters alike, building relationships before building loan books. That groundwork is why our repayment discipline remains strong even in difficult seasons — trust is the real collateral.",
+    "stats": [
+      { "label": "Years of operation", "value": "10+" },
+      { "label": "Field officers", "value": "340" },
+      { "label": "States covered", "value": "9" }
+    ]
+  }
+}

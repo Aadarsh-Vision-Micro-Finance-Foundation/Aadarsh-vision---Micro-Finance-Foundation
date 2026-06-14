@@ -1,0 +1,69 @@
+{
+  "sectionIntro": {
+    "eyebrow": "What We Offer",
+    "title": "Services built around real livelihoods",
+    "description": "Each programme is designed with one goal — to give people the financial tools and confidence to grow on their own terms."
+  },
+  "services": [
+    {
+      "id": "micro-loans",
+      "icon": "HandCoins",
+      "title": "Micro Loans",
+      "summary": "Collateral-free loans from ₹10,000 to ₹2,00,000 for income-generating activities, repaid through flexible weekly or monthly schedules.",
+      "details": [
+        "No collateral or guarantor required for first-time borrowers",
+        "Flexible repayment cycles aligned to income patterns",
+        "Transparent interest rates with no hidden processing fees",
+        "Top-up loans available on consistent repayment history"
+      ]
+    },
+    {
+      "id": "women-empowerment",
+      "icon": "Users",
+      "title": "Women Empowerment Programs",
+      "summary": "Dedicated lending circles and skill-building cohorts that help women start and scale their own enterprises with peer support.",
+      "details": [
+        "Self-help group (SHG) formation and mentorship",
+        "Priority access to working-capital loans for women-led businesses",
+        "Leadership and negotiation workshops",
+        "Childcare-friendly meeting schedules at local centres"
+      ]
+    },
+    {
+      "id": "financial-literacy",
+      "icon": "BookOpen",
+      "title": "Financial Literacy",
+      "summary": "Practical, jargon-free training on budgeting, saving, digital payments, and responsible borrowing — delivered in local languages.",
+      "details": [
+        "Household budgeting and cash-flow planning workshops",
+        "Digital banking and UPI safety training",
+        "Understanding credit scores and loan terms",
+        "Goal-based savings planning for education and emergencies"
+      ]
+    },
+    {
+      "id": "small-business-support",
+      "icon": "Store",
+      "title": "Small Business Support",
+      "summary": "Beyond capital — mentorship, market linkages, and operational guidance to help micro-enterprises become resilient businesses.",
+      "details": [
+        "One-on-one business advisory from field officers",
+        "Linkages to local supplier and buyer networks",
+        "Basic bookkeeping and inventory management training",
+        "Support with licensing and government scheme registration"
+      ]
+    },
+    {
+      "id": "savings-development",
+      "icon": "PiggyBank",
+      "title": "Savings & Development Programs",
+      "summary": "Structured savings products and community development initiatives that build long-term financial resilience beyond the loan cycle.",
+      "details": [
+        "Recurring deposit schemes with low minimum balances",
+        "Goal-linked savings for education, health, and housing",
+        "Community infrastructure micro-grants in served villages",
+        "Insurance-linked savings for risk protection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sectionIntro": {
+    "eyebrow": "Why Choose Aadarsh Vision",
+    "title": "Lending that earns trust, one cycle at a time",
+    "description": "We measure success not just in loans disbursed, but in households that no longer need us as much as they did before."
+  },
+  "reasons": [
+    {
+      "icon": "Landmark",
+      "title": "Financial Inclusion",
+      "description": "We actively reach unbanked and underbanked households in remote and underserved areas, bringing formal financial services within walking distance."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Growth & Progress",
+      "description": "Loan products are designed to scale with a borrower's business — starter loans grow into working-capital and expansion loans as enterprises mature."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Trust & Reliability",
+      "description": "A decade of consistent, predictable service has made us a dependable financial partner for thousands of families across nine states."
+    },
+    {
+      "icon": "Lock",
+      "title": "Secure Processes",
+      "description": "Borrower data and transactions are protected with bank-grade security, and every agreement is documented and signed transparently."
+    },
+    {
+      "icon": "Zap",
+      "title": "Quick Approval",
+      "description": "Most first-time loan applications are verified and approved within 5–7 working days, with funds disbursed directly to bank accounts."
+    }
+  ]
+}

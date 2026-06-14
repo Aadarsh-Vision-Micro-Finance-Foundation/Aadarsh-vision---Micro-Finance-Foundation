@@ -1,0 +1,52 @@
+{
+  "sectionIntro": {
+    "eyebrow": "How It Works",
+    "title": "From application to disbursement",
+    "description": "A straightforward four-step journey, guided by a field officer at every stage — designed so first-time borrowers never feel lost in paperwork."
+  },
+  "steps": [
+    {
+      "number": "01",
+      "title": "Apply",
+      "icon": "FileEdit",
+      "description": "Submit a simple application online or at your nearest centre with basic identity, address, and income details.",
+      "duration": "Day 1"
+    },
+    {
+      "number": "02",
+      "title": "Verification",
+      "icon": "ClipboardCheck",
+      "description": "A field officer visits to verify your details, understand your business or household needs, and explain loan terms in person.",
+      "duration": "Day 2–4"
+    },
+    {
+      "number": "03",
+      "title": "Approval",
+      "icon": "BadgeCheck",
+      "description": "Our credit team reviews the application and verification report, and communicates the approved amount and repayment schedule.",
+      "duration": "Day 5–6"
+    },
+    {
+      "number": "04",
+      "title": "Fund Disbursement",
+      "icon": "Banknote",
+      "description": "Approved funds are transferred directly to your bank account, along with a copy of your signed loan agreement.",
+      "duration": "Day 7"
+    }
+  ],
+  "form": {
+    "loanTypes": [
+      "Micro Business Loan",
+      "Women Empowerment Loan",
+      "Agriculture & Allied Loan",
+      "Education Support Loan",
+      "Emergency / Health Loan"
+    ],
+    "amountRanges": [
+      "₹10,000 – ₹25,000",
+      "₹25,001 – ₹50,000",
+      "₹50,001 – ₹1,00,000",
+      "₹1,00,001 – ₹2,00,000"
+    ]
+  }
+}

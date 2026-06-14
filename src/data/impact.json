@@ -1,0 +1,52 @@
+{
+  "sectionIntro": {
+    "eyebrow": "Our Impact",
+    "title": "A decade of measurable change",
+    "description": "Numbers that represent families, not just figures — every statistic below reflects a household that took a step forward."
+  },
+  "stats": [
+    { "id": "beneficiaries", "label": "Beneficiaries Reached", "value": 48000, "suffix": "+", "icon": "Users" },
+    { "id": "loans", "label": "Loans Distributed", "value": 186, "prefix": "₹", "suffix": " Cr", "icon": "Wallet" },
+    { "id": "villages", "label": "Villages Served", "value": 612, "suffix": "", "icon": "MapPin" },
+    { "id": "stories", "label": "Success Stories Documented", "value": 1240, "suffix": "+", "icon": "Star" }
+  ],
+  "successStoriesIntro": {
+    "eyebrow": "Success Stories",
+    "title": "Voices from the field",
+    "description": "Real journeys from borrowers who turned small loans into lasting change."
+  },
+  "testimonials": [
+    {
+      "id": "story-1",
+      "name": "Meena Devi",
+      "location": "Bareilly, Uttar Pradesh",
+      "program": "Women Empowerment Program",
+      "quote": "My tailoring stall was just a table under a tree. With my first loan I bought a sewing machine, and with the second I rented a small shop. Today two other women work with me.",
+      "result": "Business grew from 1 to 3 employees in 2 years"
+    },
+    {
+      "id": "story-2",
+      "name": "Ramesh Yadav",
+      "location": "Sitamarhi, Bihar",
+      "program": "Micro Loans",
+      "quote": "The loan process felt different from what I expected — no middlemen, no extra charges. The field officer visited my farm before approving anything, which gave me confidence.",
+      "result": "Doubled dairy herd from 2 to 5 cattle"
+    },
+    {
+      "id": "story-3",
+      "name": "Sunita Kumari",
+      "location": "Ranchi, Jharkhand",
+      "program": "Small Business Support",
+      "quote": "The financial literacy sessions taught me how to track my daily sales properly. For the first time, I know exactly how much profit my shop makes every month.",
+      "result": "Now manages a registered grocery store"
+    },
+    {
+      "id": "story-4",
+      "name": "Geeta Sharma",
+      "location": "Udaipur, Rajasthan",
+      "program": "Savings & Development",
+      "quote": "I started a recurring deposit alongside my loan repayments. In three years, I had enough saved to pay for my daughter's college admission without taking another loan.",
+      "result": "Built ₹85,000 in education savings"
+    }
+  ]
+}
