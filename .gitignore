@@ -40,3 +40,6 @@ coverage/
 # Optional Caches
 .eslintcache
 .stylelintcache   
+
+vite.config.js
+vite.config.d.ts
