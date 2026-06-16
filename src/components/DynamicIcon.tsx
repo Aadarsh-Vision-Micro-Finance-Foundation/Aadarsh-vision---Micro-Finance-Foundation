@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import type { ComponentType } from 'react';
 
-const iconMap: Record<string, ComponentType<LucideProps>> = {
+export const iconMap: Record<string, ComponentType<LucideProps>> = {
   HandCoins,
   Users,
   BookOpen,
