@@ -33,6 +33,8 @@ const LoanProcess = () => {
   const [form, setForm] = useState<FormState>(initialForm);
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     document.title = 'Apply for Loan | Aadarsh Vision Micro Finance Foundation';
@@ -59,10 +61,36 @@ const LoanProcess = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (validate()) {
+    setSubmitError('');
+
+    if (!validate()) return;
+
+    try {
+      setIsSubmitting(true);
+
+      const res = await fetch('/api/loan-application', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message || 'Application could not be submitted.');
+      }
+
       setSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : 'Application could not be submitted. Please try again.'
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -70,6 +98,7 @@ const LoanProcess = () => {
     setForm(initialForm);
     setErrors({});
     setSubmitted(false);
+    setSubmitError('');
   };
 
   return (
@@ -240,9 +269,14 @@ const LoanProcess = () => {
                       <p id="purpose-error" className="mt-1.5 text-xs text-red-600">{errors.purpose}</p>
                     )}
                   </div>
+                  {submitError && (
+                    <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+                      {submitError}
+                    </p>
+                  )}
 
-                  <button type="submit" className="btn-primary w-full sm:w-auto">
-                    Submit Application
+                  <button type="submit" className="btn-primary w-full sm:w-auto" disabled={isSubmitting}>
+                    {isSubmitting ? 'Submitting...' : 'Submit Application'}
                     <Send className="h-4 w-4" />
                   </button>
                 </motion.form>
