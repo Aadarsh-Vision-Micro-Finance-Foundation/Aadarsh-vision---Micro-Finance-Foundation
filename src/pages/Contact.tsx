@@ -30,6 +30,8 @@ const Contact = () => {
   const [form, setForm] = useState<ContactFormState>(initialForm);
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
     document.title = 'Contact Us | Aadarsh Vision Micro Finance Foundation';
@@ -53,15 +55,46 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (validate()) setSubmitted(true);
+    setSubmitError("");
+
+    if (!validate()) return;
+
+    try {
+      setIsSubmitting(true);
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Message could not be sent. Please try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
     setForm(initialForm);
     setErrors({});
     setSubmitted(false);
+    setSubmitError('');
   };
 
   const infoCards = [
@@ -252,9 +285,14 @@ const Contact = () => {
                       />
                       {errors.message && <p id="message-error" className="mt-1.5 text-xs text-red-600">{errors.message}</p>}
                     </div>
+                    {submitError && (
+                      <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+                        {submitError}
+                      </p>
+                    )}
 
-                    <button type="submit" className="btn-primary w-full sm:w-auto">
-                      Send Message
+                    <button type="submit" className="btn-primary w-full sm:w-auto" disabled={isSubmitting}>
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                       <Send className="h-4 w-4" />
                     </button>
                   </motion.form>
